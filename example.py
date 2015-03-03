@@ -13,3 +13,4 @@ calc = DomeCalc(
 
 calc.solve()
 print "Number of lengths:", calc.obj
+print "solution makeup"
