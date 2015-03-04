@@ -23,5 +23,15 @@ To use the dome calculator simply import the DomeCalc class from the domecalc mo
 Then you can create an instance of the DomeCalc class by specifying the preset function, radius, strut adjustment and master length in the constructor. Here's what those things mean:
 ## Preset Function
 A Preset function is a callback passed into the constructor that takes the other parameters and generates the presets for PSolver. You can provide your own but DomeCalc comes with preset functions for all the most common dome frequencies as static class functions:
-DomeCalc.preset_2V
-DomeCalc.preset_3V4
+**DomeCalc.preset_2V** A 2V dome. 
+**DomeCalc.preset_3V3** A 3V dome truncated at 3/8
+**DomeCalc.preset_3V5** A 3V dome truncated at 5/8
+**DomeCalc.preset_3VK4** A 3V dome modified using the krushke method truncated at 4/9
+**DomeCalc.preset_3VK5** A 3V dome modified using the krushke method truncated at 5/9
+**DomeCalc.preset_4V** A 4V dome
+## Radius
+The geometric radius of the dome (as opposed to the floor radius, internal radius, external radius)
+## Strut Adjustment
+The length that has to added to (positive value) or removed from (negative value) the "geometric" length of each strut to account for the joining method used. The geometric length is the length "bolt to bolt" and the adjustment is the additional length added to the strut so that the bolt holes can be drilled
+## Master Length
+The length of the pipes that you are cutting the struts from: typically 6000mm, 6100mm, 6500mm
