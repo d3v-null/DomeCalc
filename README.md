@@ -36,3 +36,17 @@ The geometric radius of the dome (as opposed to the floor radius, internal radiu
 The length that has to added to (positive value) or removed from (negative value) the "geometric" length of each strut to account for the joining method used. The geometric length is the length "bolt to bolt" and the adjustment is the additional length added to the strut so that the bolt holes can be drilled
 ## Master Length
 The length of the pipes that you are cutting the struts from: typically 6000mm, 6100mm, 6500mm
+
+# Examples
+Check out `example.py`.
+Example dome: 4.3m radius 4V steel dome (40mm adjustment) cut out of 6100mm lengths gives:
+
+``` python
+Number of lengths: 60
+solution makeup:
+ 30 x [1, 2, 3, 4]
+  5 x [2, 2, 3, 5]
+ 10 x [0, 0, 0, 3, 5]
+  5 x [3, 5, 5, 5]
+ 10 x [2, 2, 3, 3]
+ ```
