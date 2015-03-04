@@ -38,15 +38,18 @@ The length that has to added to (positive value) or removed from (negative value
 The length of the pipes that you are cutting the struts from: typically 6000mm, 6100mm, 6500mm
 
 # Examples
-Check out `example.py`.
+## example.py
 Example dome: 4.3m radius 4V steel dome (40mm adjustment) cut out of 6100mm lengths gives:
 
 ``` python
-Number of lengths: 60
+Number of lengths: 55
 solution makeup:
- 30 x [1, 2, 3, 4]
-  5 x [2, 2, 3, 5]
- 10 x [0, 0, 0, 3, 5]
-  5 x [3, 5, 5, 5]
- 10 x [2, 2, 3, 3]
+ 10 x [3, 4, 4, 4]
+ 15 x [3, 3, 3, 3]
+ 30 x [0, 1, 2, 2, 5]
  ```
+
+ Where 0...5 represent A..B lengths
+
+ ## example-plot.py
+An example of how to generate csv files that can be used to plot how many lengths it takes to make a dome of a given radius 

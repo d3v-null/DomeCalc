@@ -6,7 +6,7 @@ from domecalc import DomeCalc
 # -> adjustment=-80mm, maste
 calc = DomeCalc(
 	preset=DomeCalc.preset_4V, 
-	radius=4300, 
+	radius=4100, 
 	adjust=40, 
 	master=6100
 )
