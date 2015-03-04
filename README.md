@@ -39,7 +39,7 @@ The length of the pipes that you are cutting the struts from: typically 6000mm, 
 
 # Examples
 ## example.py
-Example dome: 4.3m radius 4V steel dome (40mm adjustment) cut out of 6100mm lengths gives:
+Example dome: 4.1m radius 4V steel dome (40mm adjustment) cut out of 6100mm lengths gives:
 
 ``` python
 Number of lengths: 55
