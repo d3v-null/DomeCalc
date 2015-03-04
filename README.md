@@ -51,5 +51,7 @@ solution makeup:
 
  Where 0...5 represent A..B lengths
 
- ## example-plot.py
+## example-plot.py
 An example of how to generate csv files that can be used to plot how many lengths it takes to make a dome of a given radius 
+Here's what the graphs look like for 6100mm master (+40mm adj) and 6500mm master (+40mm adj)
+![alt-text](https://raw.githubusercontent.com/derwentx/DomeCalc/master/img/Graph%20Screenshot.png "Screenshot of Geodesic Dome Graph")
