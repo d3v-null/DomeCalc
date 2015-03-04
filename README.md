@@ -29,6 +29,7 @@ A Preset function is a callback passed into the constructor that takes the other
 - **DomeCalc.preset_3VK4** A 3V dome modified using the krushke method truncated at 4/9
 - **DomeCalc.preset_3VK5** A 3V dome modified using the krushke method truncated at 5/9
 - **DomeCalc.preset_4V** A 4V dome
+
 ## Radius
 The geometric radius of the dome (as opposed to the floor radius, internal radius, external radius)
 ## Strut Adjustment
