@@ -31,6 +31,24 @@ class DomeCalc(object):
 		# print '\n'.join(map(str,patterns))
 		# pass
 
+	@property
+	def pattern_str(self):
+		try:
+			patterns = self.patterns
+		except:
+			return ""
+		out_str = ""
+		for pattern in patterns:
+			out_str += "%d x %s, " % (
+				pattern[0], 
+				"".join(map(
+					lambda x: chr(x+97),
+					pattern[1]
+				))
+			)
+		return out_str
+
+
 	@staticmethod
 	def strut_length(radius, adjust, coefficient):
 		return int(coefficient * radius + adjust)

@@ -27,3 +27,17 @@ with open('out6500.csv', 'w') as outFile:
 			domecalc.solve()
 			row.append(domecalc.obj)
 		csvwriter.writerow(row)		
+
+with open('out4000patterns.csv', 'w') as outFile:
+	csvwriter = csv.writer(outFile)
+	#write header
+	csvwriter.writerow(['', '2V'])
+	for i in range( 2000, 3000, 10 ):
+		print i
+		row = [i]
+		for j in [DomeCalc.preset_2V]:
+			domecalc = DomeCalc(j, i, 80, 4000)
+			domecalc.solve()
+			row.append(domecalc.obj)
+			row.append(domecalc.pattern_str)
+		csvwriter.writerow(row)		
