@@ -11,6 +11,11 @@ If you have any questions just shoot me an email and I'll be happy to help
 ### PVSolver
 Domecalc requires a genius bit of code called PVSolver, you can get that here: https://github.com/fdabrandao/vpsolver
 Just download the repository, run the compile shell script then run the setup.py python script (as root) to install the python module
+Or install with pip:
+```
+    pip2 install pyvpsolver
+```
+
 ### GLPK
 GLPK can be found here: https://www.gnu.org/software/glpk/
 
@@ -23,8 +28,8 @@ To use the dome calculator simply import the DomeCalc class from the domecalc mo
 Then you can create an instance of the DomeCalc class by specifying the preset function, radius, strut adjustment and master length in the constructor. Here's what those things mean:
 ## Preset Function
 A Preset function is a callback passed into the constructor that takes the other parameters and generates the presets for PSolver. You can provide your own but DomeCalc comes with preset functions for all the most common dome frequencies as static class functions:
-- **DomeCalc.preset_2V** A 2V dome. 
-- **DomeCalc.preset_3V3** A 3V dome truncated at 3/8- 
+- **DomeCalc.preset_2V** A 2V dome.
+- **DomeCalc.preset_3V3** A 3V dome truncated at 3/8-
 - **DomeCalc.preset_3V5** A 3V dome truncated at 5/8
 - **DomeCalc.preset_3VK4** A 3V dome modified using the krushke method truncated at 4/9
 - **DomeCalc.preset_3VK5** A 3V dome modified using the krushke method truncated at 5/9
@@ -52,6 +57,9 @@ solution makeup:
  Where 0...5 represent A..B lengths
 
 ## example-plot.py
-An example of how to generate csv files that can be used to plot how many lengths it takes to make a dome of a given radius 
+An example of how to generate csv files that can be used to plot how many lengths it takes to make a dome of a given radius
 Here's what the graphs look like for 6100mm master (+40mm adj) and 6500mm master (+40mm adj)
 ![alt-text](https://raw.githubusercontent.com/derwentx/DomeCalc/master/img/Graph%20Screenshot.png "Screenshot of Geodesic Dome Graph")
+
+# Troubleshooting
+Make sure glpsol is in ur path
